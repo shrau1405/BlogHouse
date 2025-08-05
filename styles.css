@@ -1,0 +1,458 @@
+/* Body styling*/
+body {
+  font-family: 'Roboto', sans-serif;  /* Primary font*/
+  background-color: #e9ecef;  /* Light grey background*/
+  color: #555555;  /* Dark grey text color*/
+  margin: 0;  
+  padding: 0;
+  text-align: center;
+}
+
+/* Header styling*/
+header {
+  background-color: #2a5d6e;  /* Dark teal background */
+  color: white;  /* White text*/
+  padding: 20px 25px;  /* Vertical and horizontal padding */
+  display: flex;  /* Use flexbox for layout */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;  /* Allow items to wrap on smaller screens */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow below header */
+}
+
+/* Left section inside header*/
+.left-section {
+  font-size: 1.6rem;  /* Larger font size */
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  color: #ffeedb;  /* Pale yellow text */
+}
+
+/* Middle section inside header*/
+.middle-section {
+  display: flex;
+  gap: 10px;  /* Gap between each child */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Style for anchor links inside middle section */
+.middle-section a {
+  color: #ffffff;
+  text-decoration: none;  /* Remove underline */
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Hover effect for links in middle section - changes color */
+.middle-section a:hover {
+  color: #f2c94c;  /* Golden yellow highlight on hover */
+}
+
+/* Separator between links in middle section*/
+.middle-section .separator {
+  color: #f2c94c;  /* Golden yellow */
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Right section inside header*/
+.right-section {
+  font-size: 1.3rem;  /* Slightly larger text */
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  color: #ffeedb;
+  border-left: 2px solid #f2c94c;  /* Vertical golden yellow separator line */
+  padding-left: 10px;  /* Padding between border and text */
+} 
+
+/* Search Bar container */
+.search-container {
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
+  margin: 20px auto;
+  max-width: 420px;  /* Maximum width constraint */
+  height: 40px;  /* Fixed height */
+  border-radius: 30px;  /* Rounded pill shape */
+  background-color: #f2c94c;   /* Bright yellow background */
+  overflow: hidden;  /* Prevent overflow of children */
+}
+
+/* Styling for the input search bar */
+#searchBar {
+  flex: 1;  /* Take full available horizontal space */
+  height: 100%;  /* Full height of container */
+  padding: 0 15px;  /* Horizontal padding inside input */
+  border: none;  /* No border */
+  outline: none;  /* Remove default focus outline */
+  background: transparent;  /* Transparent background */
+  color: black;
+  font-size: 1rem;
+}
+
+/* Button container for search icon */
+#searchIconBtn {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;  /* Cursor changes to pointer on hover */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;  /* For positioning pseudo element */
+}
+
+/* Vertical separator line inside search button */
+#searchIconBtn::before {
+  content: "";  /* Empty content */
+  position: absolute;
+  left: 0;  /* Left edge */
+  top: 8px;
+  bottom: 8px;
+  width: 2px;  /* Thin line */
+  background-color: #2a2a2a;  /* Dark grey color */
+}
+
+#searchIconBtn img {
+  width: 22px;
+  height: 22px;
+  z-index: 1;  /* Keeps icon above line */
+}
+
+/* FEATURED SECTION */
+.featured {
+  width: calc(100% - 60px);  /* Full width minus padding */
+  margin: 30px auto;  /* Center with vertical spacing */
+  padding: 25px;  /* Inner spacing */
+  border-radius: 12px;  /* Rounded corners */
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+  box-sizing: border-box; /* Includes padding in width */
+  text-align: center; /* Centered text */
+}
+
+.featured h2 {
+  font-family: 'Playfair Display', serif;  /* Stylish font */
+  color: #2a5d6e;
+  margin-bottom: 10px;  /* Space below heading */
+}
+
+/* BLOG POST GRID */
+.grid-container {
+  display: grid;  /* CSS Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));  /* Responsive grid */
+  gap: 25px;  /* Space between posts */
+  width: 100%; /* Full width */
+  padding: 0 20px; /* Side padding */
+  box-sizing: border-box; /* Includes padding */
+  margin-bottom: 60px; /* Space after grid */
+}
+
+/* INDIVIDUAL BLOG POST BOX */
+.blog-post {
+  background-color: #ffffff; /* White background */
+  padding: 20px; /* Inner spacing */
+  border-radius: 12px; /* Rounded edges */
+  box-sizing: border-box; /* Includes padding in size */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Light shadow */
+  position: relative; /* For absolute button */
+  text-align: left; /* Align text left */
+}
+
+.blog-post h2 {
+  font-family: 'Playfair Display', serif;
+  color: #2a5d6e;
+}
+
+.blog-post img {
+  width: 100%; /*full width image */
+  height: auto;  /* maintain aspect ratio */
+  border-radius: 10px;  
+  margin: 10px 0;  /*vertical spacing */
+}
+
+.date {
+  font-size: 0.9rem;  /* small font */
+  color: #888;  /* gray color */
+}
+
+.expand-btn {
+  background-color: #f2c94c;  /* yellow background */
+  color: #333; /* Dark text */
+  border: none; /* No border */
+  padding: 6px 10px; /* Inner spacing */
+  border-radius: 6px; /* Rounded edges */
+  cursor: pointer; /* Pointer cursor */
+  font-weight: 600; /* Semi-bold text */
+  font-size: 1.1rem; /* Slightly larger text */
+  display: inline-flex; /* Inline-flex for alignment */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-top: 15px;
+}
+
+/* Normal post view — position button at bottom right inside post box */
+.blog-post:not(:fullscreen) {
+  position: relative;   /* Required for absolute positioning inside */
+  padding-bottom: 60px; /* to make space for the button */
+}
+
+.blog-post:not(:fullscreen) .expand-btn {
+  position: absolute; /* Position relative to post */
+  bottom: 15px; /* Bottom spacing */
+  right: 15px; /* Right spacing */
+}
+
+/* Fullscreen view — let button scroll with content */
+.blog-post:fullscreen {
+  overflow-y: auto; /* Enable scroll if needed */
+  padding: 20px; /* Consistent padding */
+}
+
+.blog-post:fullscreen .expand-btn {
+  position: static; /* Follows normal document flow */
+  margin-top: 25px; /* Extra spacing from content */
+  float: right; /* Align button to right */
+}
+
+/* Button hover effect */
+.expand-btn:hover {
+  background-color: #eab543;  /* Slightly darker yellow */
+}
+
+/* COMMENT SECTION */
+.comment-section {
+  margin-top: 30px; /* Space before section */
+  padding-top: 20px; /* Inner padding */
+  border-top: 1px solid #ccc; /* Separator line */
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%; /* Full width */
+  padding: 8px; /* Inner spacing */
+  margin: 8px 0; /* Vertical spacing */
+  font-family: 'Roboto', sans-serif; /* Font styling */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded edges */
+}
+
+.comment-form button {
+  background-color: #f2c94c; /* Yellow background */
+  color: #333; /* Dark text */
+  padding: 10px 16px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+}
+
+.comment-form button:hover {
+  background-color: #eab543; /* Darker yellow on hover */
+}
+
+.comments-list .comment {
+  margin-top: 15px; /* Space between comments */
+  padding: 10px; /* Inner spacing */
+  background: #f8f8f8; /* Light gray background */
+  border-left: 3px solid #333; /* Left border for emphasis */
+}
+
+.comments-list .comment strong {
+  display: block; /* Block display for username */
+  margin-bottom: 5px; /* Space below name */
+}
+
+/* FOOTER SECTION */
+footer {
+  background-color: #2a5d6e; /* Matches header background */
+  color: #ffeedb; /* Cream-colored text */
+  padding: 20px 15px; /* Footer padding */
+  font-family: 'Roboto', sans-serif; /* Consistent font */
+}
+
+.footer-icons a {
+  margin: 0 10px; /* Horizontal spacing */
+  color: #ffeedb; /* Icon color */
+  font-size: 1.4rem; /* Larger icon */
+  text-decoration: none; /* No underline */
+}
+
+.footer-icons a:hover {
+  color: #f2c94c; /* Yellow on hover */
+}
+
+.footer-contact {
+  margin-top: 10px; /* Space above contact info */
+  font-size: 1rem; /* Standard font size */
+}
+
+.footer-contact .separator {
+  color: #f2c94c;  /* yellow seperator color */
+  font-weight: 700;  /* bold weight */
+  font-size: 1.2rem;  /* larger size */
+}
+
+.footer-icons .separator {
+  color: #f2c94c;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* === RESPONSIVE MEDIA QUERIES === */
+
+/* Extra Small Devices (phones ≤ 480px) */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .left-section,
+  .right-section {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .middle-section {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .middle-section .separator {
+    display: none;
+  }
+
+  .middle-section a {
+    font-size: 0.95rem;
+    padding: 4px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+  }
+
+  .search-container {
+    flex-direction: row;
+    width: 90%;
+    max-width: none;
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 25px;
+    gap: 8px;
+  }
+
+  #searchBar {
+    font-size: 0.95rem;
+    padding: 10px;
+    flex: 1;
+    height: 36px;
+  }
+
+  #searchIconBtn {
+    width: auto;
+    height: 36px;
+    padding: 0 10px;
+    border-left: 1px solid #2a2a2a;
+  }
+
+  #searchIconBtn::before {
+    display: none;
+  }
+
+  #searchIconBtn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .featured {
+    padding: 15px;
+  }
+}
+
+/* Small Devices (phones: 481px – 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .middle-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+
+  .search-container {
+    max-width: 100%;
+    margin: 15px 10px;
+  }
+
+  .left-section,
+  .right-section {
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+/* Medium Devices (tablets: 768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .left-section,
+  .right-section {
+    font-size: 1.4rem;
+    text-align: center;
+    width: auto;
+  }
+}
+
+/* Large Devices (laptops: 1025px – 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .left-section {
+    font-size: 1.5rem;
+  }
+
+  .right-section {
+    font-size: 1.2rem;
+  }
+}
+
+/* Extra Large Devices (desktops ≥ 1441px) */
+@media (min-width: 1441px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+
+  .featured {
+    max-width: 1200px;
+    margin: 30px auto;
+  }
+}

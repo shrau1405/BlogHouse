@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogHouse</title>
+   <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="left-section">BlogHouse</div>
+    <nav class="middle-section">
+      <a href="#post1">Travel</a>
+      <span class="separator">|</span>
+      <a href="#post2">OTT</a>
+      <span class="separator">|</span>
+      <a href="#post3">Fitness</a>
+      <span class="separator">|</span>
+      <a href="#post4">Movie</a>
+      <span class="separator">|</span>
+      <a href="#post5">Thoughts</a>
+    </nav>
+    <div class="right-section">Home Of Every Story</div>
+  </header>
+  <!-- Search bar container -->
+  <div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search posts..." />
+    <button id="searchIconBtn" type="button" title="Search">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg" alt="Search" />
+    </button>
+  </div>
+
+  <main>
+       <!-- Featured Blog Post -->
+    <section class="blog-post featured" id="post1" data-aos="fade-up">
+  <h2>Trekking in Monsoon: Embracing Nature's Wet Wonders</h2>
+  <p class="date">Published on: 2025-05-01</p>
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&h=500&q=80" alt="Trekking in Monsoon" />
+
+  <h3>The Magic of Monsoon Trails</h3>
+  <p>
+    When the monsoon rains arrive, they transform the trekking trails into enchanting pathways that seem straight out of a storybook. The usually dusty tracks turn into lush green corridors where every leaf glistens with raindrops. This season brings a refreshing change, not only visually but also atmospherically — the air becomes cooler and filled with the fresh scent of wet earth, creating a rejuvenating experience for trekkers seeking to escape the summer heat. Trekking amidst the gentle patter of rain and the symphony of chirping birds offers a unique way to reconnect with nature’s raw beauty.
+  </p>
+
+  <h3>Essential Gear and Preparation</h3>
+  <p>
+    Preparing for a monsoon trek means gearing up differently than in other seasons. Waterproof jackets and ponchos become indispensable to stay dry and comfortable throughout the journey. Choosing quick-dry and moisture-wicking clothing helps prevent the discomfort of wet clothes that cling to the skin. Footwear with excellent grip is critical to avoid slips on muddy and slippery paths. Additionally, using rain covers for backpacks safeguards your gear from getting drenched. Carrying a basic first-aid kit and insect repellent is also advisable, as wet environments can sometimes increase insect activity. Proper planning and packing can turn a challenging trek into an enjoyable adventure.
+  </p>
+
+  <h3>Best Destinations for Monsoon Trekking</h3>
+  <p>
+    Several trekking destinations come alive during the monsoon with spectacular views and thriving ecosystems. The Western Ghats in India, for example, are famous for their stunning waterfalls and dense forests that flourish during this time. The Nilgiris offer misty hills and vibrant wildflowers, while the Himalayan foothills reveal dramatic landscapes shrouded in clouds. Trekking through these regions allows adventurers to witness cascading streams, sparkling rivers, and the verdant wilderness in its full glory. These destinations provide an excellent blend of natural beauty and physical challenge, attracting trekkers from around the world.
+  </p>
+
+  <h3>Tips for a Safe and Enjoyable Journey</h3>
+  <p>
+    Safety is paramount when trekking in monsoon conditions. Always trek with a group or hire a local guide who knows the terrain well. Avoid routes prone to landslides or flooding, and keep a close eye on weather forecasts before and during your trek. It’s important to pace yourself and take regular breaks to avoid exhaustion. Hydration is key, so drink plenty of water and eat nutritious snacks to maintain your energy levels. Packing lightweight but effective rain gear and keeping electronic devices in waterproof pouches can prevent damage from unexpected downpours. By staying cautious and prepared, you can fully enjoy the breathtaking beauty of the monsoon wilderness.
+  </p>
+
+  <h3>Conclusion: Why You Should Try Monsoon Trekking</h3>
+  <p>
+    Trekking during the monsoon season offers an extraordinary experience that combines adventure, tranquility, and an intimate connection with nature. Despite the challenges posed by rain and slippery paths, the rewards include witnessing some of the most stunning natural sights and enjoying cooler temperatures. For those willing to brave the elements, monsoon trekking can be both physically rewarding and spiritually uplifting, offering stories and memories that last a lifetime. So pack your gear, plan wisely, and step into the wet wonderland that monsoon trekking unfolds.
+  </p>
+
+<!-- Comment Section for Post 1 -->
+<div class="comment-section">
+  <h4>Leave a Comment</h4>
+  <form class="comment-form">
+    <input type="text" class="comment-name" placeholder="Your name" required />
+    <textarea class="comment-message" placeholder="Your comment" rows="3" required></textarea>
+    <button type="submit"><b>Post Comment</b></button>
+  </form>
+  <div class="comments-list"></div>
+</div>
+
+<!-- Expand Full Screen Button -->
+  <button class="expand-btn" onclick="toggleFullScreen(this)">
+  <i class="fa-solid fa-expand"></i>
+</button>
+
+
+</section>
+
+    <!-- Grid container for other posts -->
+    <div class="grid-container">
+      <!-- Post 2 -->
+      <section class="blog-post" id="post2" data-aos="fade-up">
+  <h2>How OTT Changed Our Watching Habits</h2>
+  <p class="date">Published on: 2025-05-10</p>
+  <img src="https://www.solutelabs.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F0mnqm898%2Fproduction%2Fd9f93bef98b4535729217d14fd42b5193efea127-1456x816.png&w=3840&q=75" alt="OTT Watching Habits" />
+
+  <h3>The OTT Revolution</h3>
+  <p>
+    In the last ten years, the rise of Over-The-Top (OTT) platforms has completely disrupted traditional television and cinema viewing. Platforms like Netflix, Amazon Prime Video, Hotstar, and others have shifted control from broadcasters to viewers. No longer confined by scheduled programming, people now enjoy unlimited access to movies, web series, documentaries, and live events — all with the click of a button. This unprecedented level of freedom and personalization has sparked a global cultural shift in how and when we consume content, making entertainment more accessible and flexible than ever before.
+  </p>
+
+  <h3>Changing Consumption Patterns</h3>
+  <p>
+    One of the most noticeable behavioral changes driven by OTT is the rise of binge-watching. Entire seasons of shows are consumed in single sittings, thanks to the auto-play feature and ad-free experiences. Weekend marathons and late-night streaming sessions have replaced the traditional “prime time.” Furthermore, family viewing has transitioned to personalized viewing, with each member watching their own preferences on separate devices. OTT has blurred the lines between television and cinema, bringing high-budget, high-quality content directly to mobile phones, tablets, and smart TVs.
+  </p>
+
+  <h3>The Impact on Content Creation</h3>
+  <p>
+    With fewer creative restrictions and no dependence on advertiser-driven ratings, OTT platforms have opened the doors for fresh, bold storytelling. Independent creators and filmmakers are being given the opportunity to reach global audiences. Topics that were once considered niche or controversial now find their space online — from regional stories to untold cultural narratives. Moreover, original series and movies produced by these platforms are now competing in major award circuits, reflecting the high standards of production and storytelling innovation. Creators now rely heavily on viewer data and analytics provided by these platforms to shape future content strategies.
+  </p>
+
+  <h3>The Role of Mobile Streaming</h3>
+  <p>
+    A major factor fueling the OTT boom is the growing use of smartphones and affordable internet. In countries like India, mobile-first consumption is the norm, with users watching shows during commutes, breaks, or even while multitasking. OTT platforms have capitalized on this by offering mobile-friendly apps, data-efficient streaming options, and downloads for offline viewing. The convenience of watching high-quality entertainment anytime, anywhere has redefined the idea of "free time" and made entertainment a constant companion in daily life.
+  </p>
+
+  <h3>Conclusion: A New Era of Entertainment</h3>
+  <p>
+    OTT platforms are not just a new way to watch content — they represent an entirely new era of digital entertainment. With changing viewing habits, democratized content creation, and technology at the core, OTT has shifted power from media houses to individual viewers. As more people embrace this mode of entertainment, traditional TV and cinema must adapt or risk becoming obsolete. Whether you're into thrillers, documentaries, romantic dramas, or international cinema, there's something for everyone — and it’s just a click away.
+  </p>
+
+
+ <!-- Comment Section for Post 2 --> 
+<div class="comment-section">
+  <h4>Leave a Comment</h4>
+  <form class="comment-form">
+    <input type="text" class="comment-name" placeholder="Your name" required />
+    <textarea class="comment-message" placeholder="Your comment" rows="3" required></textarea>
+    <button type="submit"><b>Post Comment</b></button>
+  </form>
+  <div class="comments-list"></div>
+</div>
+
+<!-- Expand Full Screen Button -->
+  <button class="expand-btn" onclick="toggleFullScreen(this)">
+    <i class="fa-solid fa-expand"></i>
+  </button>
+</section>
+
+      <!-- Post 3 -->
+      <section class="blog-post" id="post3" data-aos="fade-up">
+  <h2>Fitness: Small Steps, Big Change</h2>
+  <p class="date">Published on: 2025-05-13</p>
+  <img 
+    src="https://wallpapers.com/images/featured/fitness-2e1dufzgv4p5mtk6.jpg" 
+    alt="Fitness Journey" />
+
+  <h3>The Beginning of a Healthier Journey</h3>
+  <p>
+    Fitness isn’t just about intense workouts or rigid diets — it often begins with a simple step, like a morning walk or swapping soda for water. Small changes, when practiced consistently, create long-term results. Whether it's choosing stairs over elevators, dedicating 15 minutes to stretching, or incorporating light yoga sessions, these minor efforts lay the foundation for better stamina, flexibility, and mental well-being. Starting small not only makes the journey less intimidating but also builds the discipline needed to progress steadily toward your health goals.
+  </p>
+
+  <h3>Physical and Mental Transformation</h3>
+  <p>
+    As the body adjusts to small routines, the positive effects begin to reflect not just physically but mentally as well. Regular movement boosts mood by releasing endorphins, which help fight stress and anxiety. With consistent activity, people often report increased energy levels, improved sleep quality, and a more positive outlook on daily life. Gradually, what starts as a basic fitness habit turns into a powerful lifestyle shift — where energy improves, sleep becomes deeper, and confidence starts to rise. This transformation doesn’t require a gym subscription or fancy gear — just the commitment to keep moving and making mindful choices.
+  </p>
+
+  <h3>Progress Over Perfection</h3>
+  <p>
+    One of the most common mistakes in fitness is expecting overnight results. Progress takes time, and every body responds differently. It’s important to celebrate milestones, however small they seem — like being able to do an extra push-up, jogging a few more minutes than yesterday, or simply feeling less winded climbing stairs. Tracking these achievements keeps motivation high and helps build a positive feedback loop. Remember, consistency beats intensity. It's not about how hard you push in one day, but how often you show up for yourself and maintain those habits.
+  </p>
+
+  <h3>Making Fitness a Part of Daily Life</h3>
+  <p>
+    True fitness isn’t a short-term goal — it’s a lifestyle. Incorporating activity into everyday routines makes it sustainable and enjoyable. Simple strategies like doing quick bodyweight exercises while watching TV, stretching during breaks, or walking while taking calls can add meaningful movement to otherwise sedentary routines. When fitness blends with daily life, it becomes effortless rather than forced, leading to better adherence and long-term health benefits.
+  </p>
+
+  <h3>Conclusion: Your Effort, Your Victory</h3>
+  <p>
+    Every drop of sweat, every early morning, and every mindful meal contributes to a bigger picture — a healthier, happier you. Small steps may not seem impactful at first, but over time, they compound into massive changes. Whether you're just starting or getting back on track, remember that fitness is a personal journey. Embrace your pace, stay consistent, and celebrate the progress you make along the way. Your effort today is the foundation for tomorrow’s success.
+  </p>
+
+
+<!-- Comment Section for Post 3 -->  
+<div class="comment-section">
+  <h4>Leave a Comment</h4>
+  <form class="comment-form">
+    <input type="text" class="comment-name" placeholder="Your name" required />
+    <textarea class="comment-message" placeholder="Your comment" rows="3" required></textarea>
+    <button type="submit"><b>Post Comment</b></button>
+  </form>
+  <div class="comments-list"></div>
+</div>
+
+<!-- Expand Full Screen Button -->
+  <button class="expand-btn" onclick="toggleFullScreen(this)">
+    <i class="fa-solid fa-expand"></i>
+  </button>
+</section>
+
+
+      <!-- Post 4 -->
+      <section class="blog-post" id="post4" data-aos="fade-up">
+  <h2>Chaava: Movie Review</h2>
+  <p class="date">Published on: 2025-05-15</p>
+  <img 
+    src="https://stat4.bollywoodhungama.in/wp-content/uploads/2023/10/Chhaava.jpg" 
+    alt="Chaava Movie Poster" 
+  />
+
+  <h3>A Grand Cinematic Tribute</h3>
+  <p>
+    "Chhaava", starring Vicky Kaushal, brings the legendary tale of Chhatrapati Sambhaji Maharaj to life on the big screen with impressive grandeur. Directed with a visionary approach, the film offers a cinematic experience that merges compelling storytelling with stunning visuals. It pays homage to one of Maharashtra’s greatest warriors, capturing the intensity and emotion of his journey from prince to patriot.
+  </p>
+
+  <h3>Performances</h3>
+  <p>
+    Vicky Kaushal delivers a powerful performance as Sambhaji Maharaj, convincingly portraying both the valor of a warrior and the vulnerability of a son and leader. His expressive eyes, commanding dialogue delivery, and physical transformation contribute to an impactful portrayal. The supporting cast strengthens the film’s foundation, with each actor adding weight and authenticity to their respective roles.
+  </p>
+
+  <h3>Storyline & Execution</h3>
+  <p>
+    The film manages to maintain a fine balance between action, emotion, and storytelling without overwhelming the viewer. The narrative is structured to keep the audience engaged from beginning to end, weaving historical facts with dramatic flair. "Chhaava" presents a coherent and emotionally charged tale of resistance and resilience, making it a compelling historical drama.
+  </p>
+
+  <h3>Final Verdict</h3>
+  <p>
+    With its stunning visuals, captivating soundtrack, and unforgettable performances, "Chhaava" is more than just a historical movie — it's a cinematic salute to bravery and legacy. The film succeeds in both educating and entertaining, offering a rich experience that resonates long after the credits roll.
+  </p>
+
+
+ <!-- Comment Section for Post 4 -->
+<div class="comment-section">
+  <h4>Leave a Comment</h4>
+  <form class="comment-form">
+    <input type="text" class="comment-name" placeholder="Your name" required />
+    <textarea class="comment-message" placeholder="Your comment" rows="3" required></textarea>
+    <button type="submit"><b>Post Comment</b></button>
+  </form>
+  <div class="comments-list"></div>
+</div>
+
+<!-- Expand Full Screen Button -->
+  <button class="expand-btn" onclick="toggleFullScreen(this)">
+    <i class="fa-solid fa-expand"></i>
+  </button>
+</section>
+
+      <!-- Post 5 -->
+      <section class="blog-post" id="post5" data-aos="fade-up">
+  <h2>Night Life: Calm Beyond the Chaos</h2>
+  <p class="date">Published on: 2025-05-18</p>
+  <img src="https://t3.ftcdn.net/jpg/12/75/23/90/360_F_1275239051_CaXTIcspiOr3Np3FTRvg2jKaQcHtykyx.jpg" alt="Night City Lights"  />
+
+  <h3>City Lights and Quiet Minds</h3>
+  <p>
+    The beauty of night often lies in its contrast — the world outside grows darker, quieter, but our minds grow more alive. As the hustle and clamor of the day fades, a different kind of life begins. There's no traffic to rush through, no loud voices competing — only the soft hum of distant lights and the occasional sound of wind brushing through leaves. It’s the time when the city’s chaos turns into a slow dance of headlights and stillness.
+  </p>
+
+  <h3>Peace in Solitude</h3>
+  <p>
+    Nighttime has a way of bringing clarity. With fewer distractions, we’re finally able to hear our own thoughts. Whether it’s sitting near the window with a cup of tea or lying down listening to faint raindrops, the peace feels intimate. On rainy nights especially, there’s something comforting about watching droplets race down the glass while thoughts flow freely. These moments are not filled with noise, but with the kind of silence that soothes.
+  </p>
+
+  <h3>Reflection and Questions</h3>
+  <p>
+    For many, night becomes a sacred time to reflect. Questions that were buried during the busy hours surface again: Am I where I want to be? What did I truly enjoy today? What do I want to change? This quiet questioning doesn’t demand answers. It simply allows space — space to breathe, to process, and to reconnect with our deeper self.
+  </p>
+
+  <h3>Embracing Vulnerability</h3>
+  <p>
+    Unlike the day, which demands productivity, the night welcomes vulnerability. It’s where emotions feel more real and less filtered. It’s where you can scroll through memories, make quiet promises to yourself, or even just be still without explanation. These are the unsaid luxuries of nighttime — the gentle reminder that even in solitude, we are never alone with our thoughts.
+  </p>
+
+  <h3>Presence in the Quiet</h3>
+  <p>
+    Whether it’s a routine or a rare occasion, embracing the quiet of night beside a softly lit window can bring unexpected comfort. It’s not just about darkness or silence — it’s about presence. About knowing that amidst all the chaos, there is a time meant for you — just you — to pause, to feel, and to simply be.
+  </p>
+
+<!-- Comment Section for Post 5 -->
+  <div class="comment-section">
+  <h4>Leave a Comment</h4>
+  <form class="comment-form">
+    <input type="text" class="comment-name" placeholder="Your name" required />
+    <textarea class="comment-message" placeholder="Your comment" rows="3" required></textarea>
+    <button type="submit"><b>Post Comment</b></button>
+  </form>
+  <div class="comments-list"></div>
+</div>
+
+<!-- Expand Full Screen Button -->
+  <button class="expand-btn" onclick="toggleFullScreen(this)">
+    <i class="fa-solid fa-expand"></i>
+  </button>
+</section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <span class="separator">|</span>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <span class="separator">|</span>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <span class="separator">|</span>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <div class="footer-contact">
+      <p>Contact: +91 11112222 
+        <span class="separator">|</span>
+      Email: sample@email.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration in ms
+    once: true      // Whether animation should happen only once - while scrolling down
+  });
+</script>
+
+</body>
+</html>
